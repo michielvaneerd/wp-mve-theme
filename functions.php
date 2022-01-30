@@ -2,9 +2,9 @@
 
 function mve_page_breadcrumbs() {
     global $post;
-    if (is_page() && !empty($post->post_parent)) {
+    if (is_page()) {
         $bc = ['<ul id="breadcrumbs">'];
-        $ancestors = array_reverse(get_post_ancestors($post->ID));
+        $ancestors = !empty($post->post_parent) ? array_reverse(get_post_ancestors($post->ID)) : [];
         foreach ($ancestors as $id) {
             $bc[] = '<li><a href="' . get_permalink($id) . '">' .  get_the_title($id) . '</a></li>';
         }
