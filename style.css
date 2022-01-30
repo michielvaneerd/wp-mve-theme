@@ -1,0 +1,74 @@
+/*
+ * Theme Name: WP MvE Theme
+ */
+
+ html {
+    background-color: bisque;
+}
+
+body {
+    font-size:130%;
+    line-height: 1.6;
+    max-width: 70rem;
+    margin:auto;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+#mainNav {
+    display: flex;
+}
+
+#mainNav h1 {
+    font-size:130%;
+}
+
+#mainNav ul {
+    margin-left:auto;
+    list-style: none;
+}
+
+#mainNav li {
+    display:inline-block;
+    margin-left:.4rem;
+}
+
+.meta {
+    font-size:80%;
+    color:#606060;
+}
+
+ul#breadcrumbs {
+    list-style-type: none;
+    display: flex;
+    column-gap: .4rem;
+    margin:0;
+    padding: 0;
+}
+
+ul#breadcrumbs li+li:before {
+    content: "/ ";
+  }
+
+#mainNav h1 a {
+    color:black;
+    text-decoration: none;
+}
+
+a[href] {
+    color:black;
+}
+
+li.current_page_item a {
+    color:brown;
+}
+
+.fast-toc {
+    background-color:peachpuff;
+    margin-top:1rem;
+}
+
+pre.wp-block-code code {
+    font-size:80%;
+}
+
