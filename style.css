@@ -63,9 +63,17 @@ li.current_page_item a {
     color:brown;
 }
 
+article > h1 {
+    margin-bottom:0;
+}
+
 .fast-toc {
     background-color:peachpuff;
     margin-top:1rem;
+}
+
+pre.wp-block-code {
+	margin-bottom:1em;
 }
 
 pre.wp-block-code code {

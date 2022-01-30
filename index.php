@@ -27,8 +27,13 @@ if (have_posts()) {
     _e('Nothing here...');
 }
 
-echo get_the_posts_pagination();
+if (!is_singular()) {
+	$html = get_the_posts_pagination();
+	if (!empty($html)) {
+		echo '<hr>' . $html;
+	}
+}
 
-?>
+echo '<hr>';
 
-<?php get_footer(); ?>
+get_footer();
